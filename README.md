@@ -1,2 +1,4 @@
 # pentagram
-Architecture Kata 2021
+O'Reilly Architecture Katas Apr-May 2021
+
+
