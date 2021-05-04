@@ -50,7 +50,9 @@ This is the fastest friendship we have ever made, just a week ago we did not kno
 1.  **Customer support agent**: for ticket creation over the phone
 1.  The **System**
   
-### Use Cases 
+### Use Cases
+![](/imgs/UC.jpeg)
+
 -   UC-1: Administrator performs CRUD operations via UI on the Sysops Squad experts and system internals such as supported product list.
 
 -   UC-2: Administrator generates list of experts and their corresponding skillset, location, and availability
