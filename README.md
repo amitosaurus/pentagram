@@ -36,20 +36,12 @@ This is the fastest friendship we have ever made, just a week ago we did not kno
 ### Actors
 
 1.  Administrator user maintains the internals of the system
-    
-2.  Customer : purchase support service from Penultimate Electronics
-    
-3.  Experts are assigned problem tickets and fix problems based on the
-    
-4.  ticket.
-    
-5.  Manager keeps track of problem ticket operations and receives
-    
-6.  operational and analytical reports
-    
-7.  Customer support agent: for ticket creation over the phone
-    
-8.  The System
+1.  Customer : purchase support service from Penultimate Electronics   
+1.  Experts are assigned problem tickets and fix problems based on the ticket.
+1.  Manager keeps track of problem ticket operations and receives    
+1.  operational and analytical reports    
+1.  Customer support agent: for ticket creation over the phone
+1.  The System
   
 ### Use Cases 
 -   UC-1: Administrator performs CRUD operations via UI on the Sysops Squad experts and system internals such as supported product list.
