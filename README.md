@@ -85,23 +85,21 @@ This is the fastest friendship we have ever made, just a week ago we did not kno
 -   QAS-2: When a CRUD operation is performed by Administrator the system will respond in less than a second during normal business hours (8AM-5PM)
 	- QA: Performance
 	- UC: UC1
-   
 -   QAS-3: The system is available for ticket creation and for customer data 99.999% of the time
 	- QA: Availability
-	- UC:
+	- UC: All
 -   QAS-4: The system is available for ancillary activities: billing, survey, internal configuration 99.00% of the time.
 	- QA: Availability
-	- UC:
+	- UC: All
 -   QAS-5: All components of the system can be independently tested (unit level).
 	- QA: Testability
-    	- UC:
-    
+    	- UC: All
 -   QAS-6: Integration test of all the components of the system is performed on a daily basis against a preset list of scenarios to reflect any abnormalities (bugs/defects), individual components performance and general system performance.
 	- QA: Testability
-	- UC:
+	- UC: All
 -   QAS-7: The system must maintain backward compatibility and level of decoupling so that a change in one component does impact the rest of the system. For example, the ticket creation component can be deployed independently to the server without impacting the rest of the system.
 	- QA: Modifiability: configuration changes and maintainability
-	- UC:
+	- UC: All
   
 
 ### Constraints
