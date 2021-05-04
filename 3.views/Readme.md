@@ -3,6 +3,7 @@ In the Sysop Ecosystem Multiple actors interact with the system to achieve requi
 
 ## Ticketing Workflow
 ![](../imgs/TicketingWorkflow.jpg)
+<br/>
 Ticketing  workflow steam defines how customers interact with the system for ticket creation and how Sysop Experts and Sysop IT system facilitates the ticket routing, ticket maintenance  and ticket completion. The sequence diagram captured all synchronous and asynchronous message communications that happen in the workflow.
 
 
