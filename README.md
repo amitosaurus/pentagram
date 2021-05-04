@@ -112,7 +112,7 @@ This is the fastest friendship we have ever made, just a week ago we did not kno
 
 ### Constraints
 
--   CON-1: The system must support a load of six tpm (transactions per minute) test must run at 16
+-   CON-1: The system must support a load of six tpm (transactions per minute) test must run at 60 tpm to accomodate for scebarios of sudden spikes due to unforsen events (i.e COVID-19, etc. ) 
 
 ## Solution
 ### Design Purpose
@@ -121,4 +121,17 @@ The journey to scale the current Syspos monolith is not a trivial one. There are
 
 ### Primary Functional Requirements
 The core of the Sysops system is to route experts to failing equipment to help customers achieve better quality of life. UC-6, UC-7,UC-8 and UC-9 demonstrate the core functionality of the system. A system that can not accommodate these use cases is a failing system.     
+
+### Ranking of the Quality Attribute Scenarios
+
+Scenario ID | Importance to Customer| Difficulty of implementation according to architecture
+------------| ----------------------|--------------------------------------------------------
+QAS-1 | High | High
+QAS-2 | Medium | Low
+QAS-3 | High | Medium
+QAS-4 | Medium | High
+QAS-5 | Low | Low
+QAS-6 | Low | Low
+QAS-7 | Low | High
+
 
