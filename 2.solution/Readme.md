@@ -4,6 +4,63 @@
 The journey to scale the current Syspos monolith is not a trivial one. There are many options and constraints to abide by. At core the architecture team is refactoring the existing design to achieve greater quality attributes. For example, to improve user experience during ticket creationation we are carving out the Ticket Creation component into an independent service so that more resources can be allocated to it and hence achieve better performance or response time. 
 The purpose of the design is to describe the current system (the monolith), propose a new system that solves the challenges with the current monolith and provide guides of the construction process. 
 
+## Overview of the current monolith system
+### C4 Component Model
+C4 stands for context, containers, components and code. It is a set of hierarchical diagrams that you can use to describe your software architecture at different zoom levels, each useful for different audience The C4 modelling is used here to describe and define architectures in an abstract and simple way.
+
+#### C4-L1 System Context Diagram
+![](../imgs/C4-L1-System%20Context%20Diagram.jpg)
+C4-L1 System Context Diagram is the top-level diagram  of SysOp Squad System and is also the most abstract. It show the big picture, how different users interact with the SysOp Squad System as a whole, and how the System fits together with other existing software systems
+
+Below are the external users who interact with the system
+
+- Administrator: It is the User who maintains the internal users of the system, including the list of experts and their corresponding skillset, location, and availability. Additionally , manages all of the billing and static reference data.
+
+- Customer: Registers for the Sysops Squad service, maintains their customer profile, support contracts, and billing information
+They enter problem tickets into the system, and also fill out surveys after the work has been completed.
+
+- Experts: Assigned problem tickets and fix problems based on the ticket. They also interact with the knowledge base to search for
+solutions to customer problems and also enter notes about repairs.
+
+- Call Center Agent: A call center representative Inquire ticket status and can create a new Ticket on customer behalf
+
+- Payment Gateway: It is a third party payment service provider. SysOps system interact with Payment Gateway
+to process customer annual feet
+
+- Notification System: It is the software system which is used to send notifications SMS or Email
+to customers and experts.
+
+#### C4-L2 System Container Diagram
+![](../imgs/C4-L2-Container%20Diagram.jpg)
+Containers are bigger parts of the application that could potentially be deployed separately.
+A container is a standalone piece of software in your system that executes code or stores data
+The Container diagram shows the high-level shape of the software architecture and how responsibilities are distributed across it. It also shows the major technology choices and how the containers communicate with one another.
+
+C4-L2 System Container Diagram contains following containers: 
+
+- Mobile Application: used to view problem tickets assigned to an expert. It also has access to knowledge base to search existing solutions
+Moreover, expert can update ticket status up on resolution using it It interacts with API application to perform those tasks
+
+- Web Application: A web application that provides all SysOps squad functionalities to users (Customer, Administrator, Manager, Call Center Agent)
+based on their role through interactive UI.
+
+  - It collaborates  with API application container to perform all business operations
+  - It interacts with Reporting Engine to generate and view Financial and Analytics reports
+  - It interact with Payment gateway component for secure payment processing
+  - It interacts with Notification System to send email and sms
+  - It generates business events and interact with Event Manager for asynchronous processing
+
+- Event Manager: This component handles business events for asynchronous processing
+
+- Database: Database container is used as a storage system to persist all user and customer data
+
+- Reporting Engine
+  - It is the container which generates and view financial and analytical reports
+  - It interacts with Database container to fetch the data
+
+- API Application
+This container holds all APIs to perform all business operations. It interacts with Database container to fetch and persit data
+
 ### Solution Overview
 Alis's work goes here
 
