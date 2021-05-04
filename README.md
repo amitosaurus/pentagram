@@ -31,3 +31,5 @@ This is the fastest friendship we have ever made, just a week ago we did not kno
 	- Design Purpose
 	- Primary Functional Requirements
 	- Ranking of the Quality Attribute Scenarios
+-[Views](/3.views/Readme.md)
+-[Roadmap]()
