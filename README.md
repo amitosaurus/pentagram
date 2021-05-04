@@ -2,7 +2,7 @@
 
 # Architectural Katas 2021 - Team Pentagram
 ## Introduction
-This is the fastest friendship we have ever made, just a week ago we did not know each others and now we are 100% into this project. Just four passionate guys about software architecture, want to know more about use, sure here you go: 
+This is the fastest friendship we have ever made, just a week ago we did not know each others and now we are 100% into this project. Just four passionate guys about software architecture.
 ### Members
 - Amit Bhatnagar: [LinkedIn](https://www.linkedin.com/in/b-amit/)
 - Ali Imran: [LinkedIn](https://www.linkedin.com/in/aliimran-ibm/)
