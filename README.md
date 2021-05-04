@@ -20,6 +20,27 @@ This is the fastest friendship we have ever made, just a week ago we did not kno
 ## Introduction
 
 ### Business Problem
+Based on the requirements that was given to the architecture team, the problems that exists with the current system are summarized in the following: 
+
+> Things have not been good with the Sysops Squad lately. The current
+> trouble ticket system is a large monolithic application that was
+> developed many years ago. Customers are complaining that consultants
+> are never showing up due to lost tickets, and often times the wrong
+> consultant shows up to fix something they know nothing about.
+> Customers and call-center staff have been complaining that the system
+> is not always available for web-based or call-based problem ticket
+> entry. Change is difficult and risky in this large monolith - whenever
+> a change is made, it takes too long and something else usually breaks.
+> Due to reliability issues, the monolithic system frequently “freezes
+> up” or crashes - they think it’s mostly due a spike in usage and the
+> number of customers using the system. If something isn’t done soon,
+> Penultimate Electronics will be forced to abandon this very lucrative
+> business line and fire all of the experts (including you, the
+> architect).
+
+Scary, huh !!!
+
+Please note: given the nature of this exercise the architecture team is assuming that the problem statement is correct and accurate. Normally, we put an effort into verifying all the assumptions and ask for solid evidences for the correctness of the requirement being **paramount** to the success of the entire project.  
 
 ### Assumptions
 
