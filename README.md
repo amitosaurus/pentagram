@@ -43,6 +43,7 @@ Scary, huh !!!
 Please note: given the nature of this exercise the architecture team is assuming that the problem statement is correct and accurate. Normally, we put an effort into verifying all the assumptions and ask for solid evidences for the correctness of the requirement being **paramount** to the success of the entire project.  
 
 ### Assumptions
+We decided to put some assumptions in place to be able to reason about the system design. These should be further clarified with the customer. 
 
 -   Phase one of the development efforts aims to ensure that response time for ticket creation is <1s for 99% of ticket creation requests
     
