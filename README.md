@@ -1,7 +1,7 @@
 
 
 # Architectural Katas 2021 - Team Pentagram
-## Introduction
+
 This is the fastest friendship we have ever made, just a week ago we did not know each others and now we are 100% into this project. Just four passionate guys about software architecture.
 ### Members
 - Amit Bhatnagar: [LinkedIn](https://www.linkedin.com/in/b-amit/)
@@ -10,9 +10,10 @@ This is the fastest friendship we have ever made, just a week ago we did not kno
 - Somenath Mukherjee: [LinkedIn](https://www.linkedin.com/in/somenathmukherjee/)
 
 
-## Background
+## Introduction
 
 ### Business Problem
+
 ### Assumptions
 
 -   Phase one of the development efforts aims to ensure that response time for ticket creation is <1s for 99% of ticket creation requests
