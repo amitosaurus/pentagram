@@ -11,7 +11,6 @@ For us to move toward a better system, we had to set guiding principles:
 As a result we are going to take the current monolith and transformit over multiple phases so that we can build an excellent customer experience. </br>
 
 A set of assumptions had to be put in place for us to make better choices on the alternative solutions that we thought of. Most of the assumptions are based on our personal experiences with ticket management systems and order fulfillments. We made sure such assumptions are well communicated in a dedicated section. </br> 
-
 Through many deep discussions on alternative solutions, trade-offs, phases we built a set of ADR’s and made sure to put emphasises on the why being more important than the what. </br>
 Finally, a roadmap of our architecture work that can reflect the work that the architecture team wants to do in the future is put in place. </br>
 
