@@ -18,7 +18,6 @@ This is the fastest friendship we have ever made, just a week ago we did not kno
 - [Software Architecture in Practice](https://learning.oreilly.com/library/view/software-architecture-in/9780136885979/ch08.html)
 
 ## Table of Content
-- [Definitions](definitions.md)
 - [Introduction](introduction.md)	
 - [Use Case Analysis](/1.problem/Readme.md)
 	- Business Problem
