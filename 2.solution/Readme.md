@@ -123,3 +123,41 @@ Our ADR naming convention is:
 
 All our ADRs can be found [here](/adrs)
 
+
+
+## Overview of the Proposed Solution
+
+We propose to migrate the current architecture in Phases (please check ADRs that document our thought process behind this), with transition between phases driven by data from fitness functions.
+
+The following phases for migration have been determined -
+
+### Phase 0
+
+Introduce fitness functions in the existing architecture to draw a baseline for every measurable characteristic that we need to track
+
+### Phase 1
+
+Break the existing monolith into multiple services, all using the same common DB and interacting using a Message Broker (that will also serve as an Orchestrator & help with workflows in our event-driven system)
+
+![](https://raw.githubusercontent.com/amitosaurus/pentagram/main/imgs/TSS_Migration_Phase-1.png)
+
+
+
+### Phase 2
+
+Create bounded contexts for certain services with each of them having their own DB and (pragmatically) allow select services to share a DB
+
+![](https://raw.githubusercontent.com/amitosaurus/pentagram/main/imgs/TSS_Migration_Phase-2.png)
+
+
+
+- <u>Phase 3</u>: With the rest of the system staying the same, convert the ticketing service into a microservice and deploy it on the cloud
+
+  ![](https://raw.githubusercontent.com/amitosaurus/pentagram/main/imgs/TSS_Migration_Phase-3.png)
+
+
+
+### Phase 4 (As Needed Over Time)
+
+Based on data obtained from fitness functions, other services can be converted to microservices as well and moved to the cloud
+
