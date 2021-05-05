@@ -101,5 +101,25 @@ QAS-7 | Low | High
         3. -Better Reponsiveness
     1. Rational: Choose to implement a central message broker for better Centralized workflow. Performance was tradeoff however proper design consideration will be done for traffic prioritization.  
 
-### ADR's
-please see [here]()
+### ADRs
+To capture critical architectural decisions made during the evolution of this proposal, we maintained ADRs.
+
+A key difference in our naming convention is the provision for tracking the superseded ADRs, along with the original.
+
+Our ADR naming convention is:
+
+​			``` adr_nnn-xx_IdentifyingTag```
+
+... where...
+
+​    ***adr*** is a keyword indicating that the file is an ADR
+
+​	***nnn*** is a 3 digit sequence number to track the ADR
+
+​    ***xx*** is a 2 digit number to track all superseded instances of the ADR.
+​         Thus an ADR superseding `adr_051-00_UseOfRuleEngine.md`would be `adr_051-01_UseOfRuleEngine.md`
+
+   ***IdentifyingTag*** is a tag that tells us a little about the Architectural Decision that is captured
+
+All our ADRs can be found [here](/adrs)
+
