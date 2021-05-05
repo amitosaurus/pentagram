@@ -33,4 +33,6 @@ This is the fastest friendship we have ever made, just a week ago we did not kno
 	- Tradeoffs 
 	- ADR's
 - [Views](/3.views/Readme.md)
+	- Sequence Diagrams
+	- Data Models
 - [Roadmap](/4.roadmap/Readme.md)
