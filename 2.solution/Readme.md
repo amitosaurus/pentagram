@@ -1,7 +1,7 @@
 ## Solution
 
 ### Design Purpose
-The journey to scale the current Syspos monolith is not a trivial one. There are many options and constraints to abide by. At core the architecture team is refactoring the existing design to achieve greater quality attributes. For example, to improve user experience during ticket creationation we are carving out the Ticket Creation component into an independent service so that more resources can be allocated to it and hence achieve better performance or response time. 
+The journey to scale the current Syspos monolith is not a trivial one. There are many options and constraints to abide by. At the core, the architecture team is refactoring the existing design to achieve greater quality attributes. For example, to improve user experience during ticket creation, we are carving out the Ticket Creation component into an independent service so that more resources can be allocated to it and hence achieve better performance or response time. 
 The purpose of the design is to describe the current system (the monolith), propose a new system that solves the challenges with the current monolith and provide guides of the construction process. 
 
 ## Overview of the current monolith system
@@ -10,11 +10,11 @@ C4 stands for context, containers, components and code. It is a set of hierarchi
 
 #### C4-L1 System Context Diagram
 ![](../imgs/C4-L1-System%20Context%20Diagram.jpg)
-C4-L1 System Context Diagram is the top-level diagram  of SysOp Squad System and is also the most abstract. It show the big picture, how different users interact with the SysOp Squad System as a whole, and how the System fits together with other existing software systems
+C4-L1 System Context Diagram is the top-level diagram  of SysOp Squad System and is also the most abstract. It shows the big picture, how different users interact with the SysOp Squad System as a whole, and how the System fits together with other existing software systems
 
 Below are the external users who interact with the system
 
-- Administrator: It is the User who maintains the internal users of the system, including the list of experts and their corresponding skillset, location, and availability. Additionally , manages all of the billing and static reference data.
+- Administrator: It is the User who maintains the internal users of the system, including the list of experts and their corresponding skillset, location, and availability. Additionally, manages all of the billing and static reference data.
 
 - Customer: Registers for the Sysops Squad service, maintains their customer profile, support contracts, and billing information
 They enter problem tickets into the system, and also fill out surveys after the work has been completed.
@@ -24,7 +24,7 @@ solutions to customer problems and also enter notes about repairs.
 
 - Call Center Agent: A call center representative Inquire ticket status and can create a new Ticket on customer behalf
 
-- Payment Gateway: It is a third party payment service provider. SysOps system interact with Payment Gateway
+- Payment Gateway: It is a third-party payment service provider. SysOps system interact with Payment Gateway
 to process customer annual feet
 
 - Notification System: It is the software system which is used to send notifications SMS or Email
@@ -36,9 +36,9 @@ Containers are bigger parts of the application that could potentially be deploye
 A container is a standalone piece of software in your system that executes code or stores data
 The Container diagram shows the high-level shape of the software architecture and how responsibilities are distributed across it. It also shows the major technology choices and how the containers communicate with one another.
 
-C4-L2 System Container Diagram contains following containers: 
+C4-L2 System Container Diagram contains the following containers: 
 
-- Mobile Application: used to view problem tickets assigned to an expert. It also has access to knowledge base to search existing solutions
+- Mobile Application: used to view problem tickets assigned to an expert. It also has access to the knowledge base to search existing solutions
 Moreover, expert can update ticket status up on resolution using it It interacts with API application to perform those tasks
 
 - Web Application: A web application that provides all SysOps squad functionalities to users (Customer, Administrator, Manager, Call Center Agent)
@@ -46,20 +46,20 @@ based on their role through interactive UI.
 
   - It collaborates  with API application container to perform all business operations
   - It interacts with Reporting Engine to generate and view Financial and Analytics reports
-  - It interact with Payment gateway component for secure payment processing
+  - It interacts with the Payment gateway component for secure payment processing
   - It interacts with Notification System to send email and sms
-  - It generates business events and interact with Event Manager for asynchronous processing
+  - It generates business events and interacts with the Event Manager for asynchronous processing
 
 - Event Manager: This component handles business events for asynchronous processing
 
 - Database: Database container is used as a storage system to persist all user and customer data
 
 - Reporting Engine
-  - It is the container which generates and view financial and analytical reports
-  - It interacts with Database container to fetch the data
+  - It is the container that generates and view financial and analytical reports
+  - It interacts with the Database container to fetch the data
 
 - API Application
-This container holds all APIs to perform all business operations. It interacts with Database container to fetch and persit data
+This container holds all APIs to perform all business operations. It interacts with Database container to fetch and persist data
 
 ### Primary Functional Requirements
 The core of the Sysops system is to route experts to failing equipment to help customers achieve better quality of life. UC-6, UC-7,UC-8 and UC-9 demonstrate the core functionality of the system. A system that can not accommodate these use cases is considered a failure.      
@@ -83,22 +83,22 @@ QAS-7 | Low | High
         1. (+Configurability)
         1. (+Usability)
         1. -Maintainability
-    1. Rational: Created Multiple Frond End UIs for Ticket creation and backend support operations for better usability and configurability. Maintainability was tradeof   
+    1. Rational: Created Multiple Frond End UIs for Ticket creation and backend support operations for better usability and configurability. Maintainability was trade-off   
 1. Decision: Strict Contacts vs Value based Contracts
     1. Options:
         1. Loose Contracts
         1. (+Requires Fitness Functions)
         1. (+Loose Coupling)
         1. - Better Control
-    1. Rational: Decided to go with a loose contracts as architecture was evolving to be micro services. Ensured loose coupling and established fitness functions.
-1. Decision: Choreography vs Orcestration
+    1. Rational: Decided to go with a loose contracts as architecture was evolving to be microservices. Ensured loose coupling and established fitness functions.
+1. Decision: Choreography vs Orchestration
     1. Options:
         1. Orchestration
         1. (+Centralized workflow)
         1. (+Loose Coupling)
         1. (+Better Control of sagas and error handling)
         2. -Distributed Workflow
-        3. -Better Reponsiveness
+        3. -Better Responsiveness
     1. Rational: Choose to implement a central message broker for better Centralized workflow. Performance was tradeoff however proper design consideration will be done for traffic prioritization.  
 
 ### ADRs
@@ -117,7 +117,7 @@ Our ADR naming convention is:
 ​	***nnn*** is a 3 digit sequence number to track the ADR
 
 ​    ***xx*** is a 2 digit number to track all superseded instances of the ADR.
-​         Thus an ADR superseding `adr_051-00_UseOfRuleEngine.md`would be `adr_051-01_UseOfRuleEngine.md`
+​         Thus an ADR superseding `adr_051-00_UseOfRuleEngine.md` would be `adr_051-01_UseOfRuleEngine.md`
 
    ***IdentifyingTag*** is a tag that tells us a little about the Architectural Decision that is captured
 
