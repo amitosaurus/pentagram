@@ -12,9 +12,30 @@
 
 With the current context, the following "*ilities*" have been deemed most relevant -
 
-![](C:\Users\amito\OneDrive\Documents\GitHub\pentagram\The_Sysops_Squad\architecture\images\TSS_ArchitectureCharacteristics.png)
+![](https://raw.githubusercontent.com/amitosaurus/pentagram/main/imgs/TSS_ArchitectureCharacteristics.png)
 
 
+
+To elaborate the need for some of these characteristics,
+
+- ***Evolvability***
+  - To make it feasible (and easy) to adapt to evolving needs and over time, not turn back into "*a large monolith application that was developed many years ago*"
+- ***Observability*** - Debuggability, Traceability
+  - To help perform RCA for lost tickets
+- ***Reliability*** - Data Integrity
+  - To make sure the right experts are assigned to the ticket
+- ***Agility*** - Modularity, Testability, Deployability
+  - To be able to make changes to parts of the system quickly without effecting the rest of the system
+  - To improve time to market
+  - To identify & fix issues early and reduce production issues
+- ***Operability*** - Resiliency, Manageability, Recoverability, Fault Tolerance
+  - To make production operations smoother and more predictable 
+- ***Availability***
+  - To ensure that web-based and call-based ticket entries are always possible
+- ***Elasticity***
+  - To handle spikes of requests coming into the system without crashing
+- ***Security***
+  - To safely perform credit card transactions and bill customers regularly (even though this has not been deemed to be a challenge in the existing system)
 
 **<u>Consequences</u>**:
 

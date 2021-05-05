@@ -10,7 +10,7 @@
 
 `, we used the following matrix [ref: https://www.developertoarchitect.com/downloads/worksheets.html] to help visualize our options
 
-![TSS_ArchitecturalStyle](C:\Users\amito\OneDrive\Documents\GitHub\pentagram\The_Sysops_Squad\architecture\images\TSS_ArchitecturalStyle.png)
+![](https://raw.githubusercontent.com/amitosaurus/pentagram/main/imgs/TSS_ArchitecturalStyle.png)
 
 
 
