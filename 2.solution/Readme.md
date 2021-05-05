@@ -151,9 +151,11 @@ Create bounded contexts for certain services with each of them having their own 
 
 
 
-- <u>Phase 3</u>: With the rest of the system staying the same, convert the ticketing service into a microservice and deploy it on the cloud
+### Phase 3
 
-  ![](https://raw.githubusercontent.com/amitosaurus/pentagram/main/imgs/TSS_Migration_Phase-3.png)
+With the rest of the system staying the same, convert the ticketing service into a microservice and deploy it on the cloud
+
+![](https://raw.githubusercontent.com/amitosaurus/pentagram/main/imgs/TSS_Migration_Phase-3.png)
 
 
 
