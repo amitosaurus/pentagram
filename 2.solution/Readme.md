@@ -61,10 +61,6 @@ based on their role through interactive UI.
 - API Application
 This container holds all APIs to perform all business operations. It interacts with Database container to fetch and persit data
 
-### Solution Overview
-Alis's work goes here
-
-
 ### Primary Functional Requirements
 The core of the Sysops system is to route experts to failing equipment to help customers achieve better quality of life. UC-6, UC-7,UC-8 and UC-9 demonstrate the core functionality of the system. A system that can not accommodate these use cases is considered a failure.      
 
@@ -80,4 +76,27 @@ QAS-5 | Low | Low
 QAS-6 | Low | Low
 QAS-7 | Low | High
 
-
+### Trade-offs
+1. Decision: One Front end UI vs Multi front ends
+    1. Options:
+        1. Multiple Front Ends
+        1. (+Configurability)
+        1. (+Usability)
+        1. -Maintainability
+    1. Rational: Created Multiple Frond End UIs for Ticket creation and backend support operations for better usability and configurability. Maintainability was tradeof   
+1. Decision: Strict Contacts vs Value based Contracts
+    1. Options:
+        1. Loose Contracts
+        1. (+Requires Fitness Functions)
+        1. (+Loose Coupling)
+        1. - Better Control
+    1. Rational: Decided to go with a loose contracts as architecture was evolving to be micro services. Ensured loose coupling and established fitness functions.
+1. Decision: Choreography vs Orcestration
+    1. Options:
+        1. Orchestration
+        1. (+Centralized workflow)
+        1. (+Loose Coupling)
+        1. (+Better Control of sagas and error handling)
+        2. -Distributed Workflow
+        3. -Better Reponsiveness
+    1. Rational: Choose to implement a central message broker for better Centralized workflow. Performance was tradeoff however proper design consideration will be done for traffic prioritization.  
