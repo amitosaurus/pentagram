@@ -16,7 +16,7 @@ This is the fastest friendship we have ever made, just a week ago we did not kno
 - [software-architecture-fundamentals](https://learning.oreilly.com/videos/software-architecture-fundamentals/9781491998991?autoplay=false)
 - [fundamentals-of-software](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
 - [Software Architecture in Practice](https://learning.oreilly.com/library/view/software-architecture-in/9780136885979/ch08.html)
-- [www.developertoarchitect.com](https://www.developertoarchitect.com/)
+- [www.DeveloperToArchitect.com](https://www.developertoarchitect.com/)
 
 ## Table of Content
 - [Introduction](introduction.md)	
